@@ -10,32 +10,8 @@
 // Synced by: leetie
 // ──────────────────────────────────────────────────
 
-class Solution:
-    def findCircleNum(self, isConnected: List[List[int]]) -> int:
-        n = len(isConnected)
-        graph = defaultdict(list)
-
-        for i in range(n):
-            for j in range(n):
-                print(i+1, j+1, isConnected[i][j])
-                if i == j:
-                    if not graph.get(i+1):
-                        graph[i+1] = []
-
-                elif isConnected[i][j] == 1:
-                    graph[i+1].append(j+1)
-
+class Solution {
+    public int findCircleNum(int[][] isConnected) {
         
-        q = deque([1])
-        vis = set()
-
-        while q:
-            node = q.popleft()
-            vis.add(node)
-            for i in graph(node):
-                
-
-
-
-                
-        print(graph)
+    }
+}
