@@ -1,10 +1,10 @@
 # ──────────────────────────────────────────────────
 # Problem  : 9. Palindrome Number
 # Difficulty: Easy
-# Tags     : N/A
+# Tags     : Math
 # Link     : https://leetcode.com/problems/palindrome-number/
-# Runtime  : N/A (beats 0%)
-# Memory   : N/A (beats 0%)
+# Runtime  : 1 ms (beats 93%)
+# Memory   : 19408000 (beats 19%)
 # Language : python3
 # Copyright: (c) 2026 Shanmukh-dev. All rights reserved.
 # Synced by: leetie
