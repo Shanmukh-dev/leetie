@@ -1,7 +1,7 @@
 # ──────────────────────────────────────────────────
 # Problem  : 9. Palindrome Number
 # Difficulty: Easy
-# Tags     : Math
+# Tags     : N/A
 # Link     : https://leetcode.com/problems/palindrome-number/
 # Runtime  : N/A (beats 0%)
 # Memory   : N/A (beats 0%)
