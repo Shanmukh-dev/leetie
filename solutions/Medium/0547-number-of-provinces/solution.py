@@ -10,40 +10,32 @@
 # Synced by: leetie
 # ──────────────────────────────────────────────────
 
-class Solution {
-    void dfs(Map<Integer, List<Integer>> adj, int node, int[] visit){
-        visit[node] = 1;
+class Solution:
+    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+        n = len(isConnected)
+        graph = defaultdict(list)
 
-        for(int it: adj.get(node)){
-            if(visit[it] != 1)
-                dfs(adj, it, visit);
-        }
-    }
-    public int findCircleNum(int[][] isConnected) {
-        Map<Integer, List<Integer>> adj = new HashMap<>();
-        int n = isConnected.length;
-        for(int i = 0; i < n; i++){
-            adj.put(i, new ArrayList<>());
-        }
+        for i in range(n):
+            for j in range(n):
+                print(i+1, j+1, isConnected[i][j])
+                if i == j:
+                    if not graph.get(i+1):
+                        graph[i+1] = []
 
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                if(isConnected[i][j] == 1 && i != j){
-                    adj.get(i).add(j);
-                    adj.get(j).add(i);
-                }
-            }
-        }
+                elif isConnected[i][j] == 1:
+                    graph[i+1].append(j+1)
 
-        int[] visit = new int[n];
-        int cnt = 0;
-        for(int i = 0; i < n; i++){
-            if(visit[i] != 1) {
-                dfs(adj, i, visit);
-                cnt++;
-            }
-        }
+        
+        q = deque([1])
+        vis = set()
 
-        return cnt;
-    }
-}
+        while q:
+            node = q.popleft()
+            vis.add(node)
+            for i in graph(node):
+                
+
+
+
+                
+        print(graph)
