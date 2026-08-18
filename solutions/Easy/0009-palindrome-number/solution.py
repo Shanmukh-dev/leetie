@@ -3,8 +3,8 @@
 # Difficulty: Easy
 # Tags     : Math
 # Link     : https://leetcode.com/problems/palindrome-number/
-# Runtime  : 1 ms (beats 93%)
-# Memory   : 19408000 (beats 19%)
+# Runtime  : N/A (beats 0%)
+# Memory   : N/A (beats 0%)
 # Language : python3
 # Copyright: (c) 2026 Shanmukh-dev. All rights reserved.
 # Synced by: leetie
